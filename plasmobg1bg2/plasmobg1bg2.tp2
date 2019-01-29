@@ -1,0 +1,117 @@
+/*
+ * Plasmocat's "BG1 in BG2-Style" Portrait Pack
+ * Version 2
+ * Art by Plasmocat, code by cmorgan
+ * April 20, 2008
+*/
+
+BACKUP ~plasmobg1bg2/backup~
+SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~
+
+VERSION ~v3~
+
+ALWAYS
+
+  ACTION_IF NOT VARIABLE_IS_SET firebeadstate1 THEN BEGIN // check to make this happen only once per install; set in g3_cpmvars_master.tpa
+    
+	INCLUDE ~plasmobg1bg2/lib/g3_cpmvars_master.tpa~
+	INCLUDE ~plasmobg1bg2/lib/cd_portrait_copy.tph~
+  
+  END
+
+END
+
+README ~plasmobg1bg2/readme-plasmobg1bg2.html~
+
+AUTO_TRA ~plasmobg1bg2/tra/%s~
+
+LANGUAGE ~English~                                    ~english~ ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+LANGUAGE ~Deutsch (Translation by Taimon)~            ~german~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+                                                                ~plasmobg1bg2/tra/german/plasmobg1bg2.tra~
+LANGUAGE ~Polski (Translation by brucevayne)~         ~polish~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+                                                                ~plasmobg1bg2/tra/polish/plasmobg1bg2.tra~
+LANGUAGE ~Francais (Translation by Anomaly)~          ~french~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+                                                                ~plasmobg1bg2/tra/french/plasmobg1bg2.tra~
+LANGUAGE ~Russian (Translation by vit mg & aerie.ru)~ ~russian~ ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+                                                                ~plasmobg1bg2/tra/russian/plasmobg1bg2.tra~
+
+
+
+
+/////                                                  \\\\\
+///// Make portraits available for use by PC           \\\\\
+/////                                                  \\\\\
+
+BEGIN @11 DESIGNATED 1000
+
+ACTION_FOR_EACH file IN pc0aja pc0alo pc0bra pc0cor pc0dyn pc0eld pc0fal pc0gar pc0imo1 pc0imo2 pc0jah pc0kag pc0kha 
+                        pc0kiv pc0mon pc0qua pc0saf pc0sha pc0ski pc0tia pc0vic pc0xan pc0xza1 pc0xza2 pc0yes  BEGIN
+						
+  LAF cd_pc_portrait_copy STR_VAR source = "%file%" source_path = "plasmobg1bg2/portraits" END
+
+END
+
+/////                                                  \\\\\
+///// Plasmocat's BG1 NPC Portraits in BG2 Style       \\\\\
+/////                                                  \\\\\
+
+BEGIN @0  /* Plasmocat's BG1 NPC Portraits in BG2 Style */
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
+
+LAF cd_portrait_copy STR_VAR source = "pc0aja1" destination = EVAL "%tutu_scripta%jantis" source_path = "plasmobg1bg2/portraits" END 
+LAF cd_portrait_copy STR_VAR source = "pc0alo1" destination = EVAL "%tutu_scripta%lora" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0bra1" destination = EVAL "%tutu_scriptb%ranwe" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0cor1" destination = EVAL "%tutu_scriptc%oran" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0dyn1" destination = EVAL "%tutu_scriptd%ynahei" source_path = "plasmobg1bg2/portraits" END  
+//LAF cd_portrait_copy STR_VAR source = "pc0edw1" destination = EVAL "%tutu_scripte%dwin" source_path = "plasmobg1bg2/portraits" END // no file 
+LAF cd_portrait_copy STR_VAR source = "pc0eld1" destination = EVAL "%tutu_scripte%ldoth" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0fal1" destination = EVAL "%tutu_scriptf%aldorn" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0gar1" destination = EVAL "%tutu_scriptg%arrick" source_path = "plasmobg1bg2/portraits" END  
+//LAF cd_portrait_copy STR_VAR source = "pc0imo1" destination = EVAL "%tutu_scripti%moen" source_path = "plasmobg1bg2/portraits" END // chosen below 
+LAF cd_portrait_copy STR_VAR source = "pc0jah1" destination = EVAL "%tutu_scriptj%aheira" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0kag1" destination = EVAL "%tutu_scriptk%again" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0kha1" destination = EVAL "%tutu_scriptk%halid" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0kiv1" destination = EVAL "%tutu_scriptk%ivan" source_path = "plasmobg1bg2/portraits" END
+//LAF cd_portrait_copy STR_VAR source = "pc0min1" destination = EVAL "%tutu_scriptm%insc" source_path = "plasmobg1bg2/portraits" END // no file
+LAF cd_portrait_copy STR_VAR source = "pc0mon1" destination = EVAL "%tutu_scriptm%ontar" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0qua1" destination = EVAL "%tutu_scriptq%uayle" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0saf1" destination = EVAL "%tutu_scripts%afana" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0sha1" destination = EVAL "%tutu_scripts%hartel" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0ski1" destination = EVAL "%tutu_scripts%kie" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0tia1" destination = EVAL "%tutu_scriptt%iax" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0vic1" destination = EVAL "%tutu_scriptv%iconia" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0xan1" destination = EVAL "%tutu_scriptx%an" source_path = "plasmobg1bg2/portraits" END
+//LAF cd_portrait_copy STR_VAR source = "pc0xza1" destination = EVAL "%tutu_scriptx%zar" source_path = "plasmobg1bg2/portraits" END // chosen below
+LAF cd_portrait_copy STR_VAR source = "pc0yes1" destination = EVAL "%tutu_scripty%eslick" source_path = "plasmobg1bg2/portraits" END
+
+/////                                                  \\\\\
+///// Imoen                                            \\\\\
+/////                                                  \\\\\
+
+BEGIN @4
+SUBCOMPONENT @5
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
+
+LAF cd_portrait_copy STR_VAR source = "pc0imo1" destination = EVAL "%tutu_scripti%moen" source_path = "plasmobg1bg2/portraits" END 
+
+BEGIN @6
+SUBCOMPONENT @5
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
+
+LAF cd_portrait_copy STR_VAR source = "pc0imo2" destination = EVAL "%tutu_scripti%moen" source_path = "plasmobg1bg2/portraits" END  
+
+/////                                                  \\\\\
+///// Xzar                                             \\\\\
+/////                                                  \\\\\
+
+BEGIN @7
+SUBCOMPONENT @8
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
+
+LAF cd_portrait_copy STR_VAR source = "pc0xza1" destination = EVAL "%tutu_scriptx%zar" source_path = "plasmobg1bg2/portraits" END
+
+BEGIN @9
+SUBCOMPONENT @8
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
+
+LAF cd_portrait_copy STR_VAR source = "pc0xza2" destination = EVAL "%tutu_scriptx%zar" source_path = "plasmobg1bg2/portraits" END
