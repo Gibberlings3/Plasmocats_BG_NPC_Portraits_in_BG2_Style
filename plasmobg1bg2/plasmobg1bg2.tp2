@@ -58,31 +58,31 @@ END
 BEGIN @0  /* Plasmocat's BG1 NPC Portraits in BG2 Style */
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
-LAF cd_portrait_copy STR_VAR source = "pc0aja1" destination = EVAL "%tutu_scripta%jantis" source_path = "plasmobg1bg2/portraits" END 
-LAF cd_portrait_copy STR_VAR source = "pc0alo1" destination = EVAL "%tutu_scripta%lora" source_path = "plasmobg1bg2/portraits" END  
-LAF cd_portrait_copy STR_VAR source = "pc0bra1" destination = EVAL "%tutu_scriptb%ranwe" source_path = "plasmobg1bg2/portraits" END  
-LAF cd_portrait_copy STR_VAR source = "pc0cor1" destination = EVAL "%tutu_scriptc%oran" source_path = "plasmobg1bg2/portraits" END  
-LAF cd_portrait_copy STR_VAR source = "pc0dyn1" destination = EVAL "%tutu_scriptd%ynahei" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0aja" destination = EVAL "%tutu_scripta%jantis" source_path = "plasmobg1bg2/portraits" END 
+LAF cd_portrait_copy STR_VAR source = "pc0alo" destination = EVAL "%tutu_scripta%lora" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0bra" destination = EVAL "%tutu_scriptb%ranwe" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0cor" destination = EVAL "%tutu_scriptc%oran" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0dyn" destination = EVAL "%tutu_scriptd%ynahei" source_path = "plasmobg1bg2/portraits" END  
 //LAF cd_portrait_copy STR_VAR source = "pc0edw1" destination = EVAL "%tutu_scripte%dwin" source_path = "plasmobg1bg2/portraits" END // no file 
-LAF cd_portrait_copy STR_VAR source = "pc0eld1" destination = EVAL "%tutu_scripte%ldoth" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0fal1" destination = EVAL "%tutu_scriptf%aldorn" source_path = "plasmobg1bg2/portraits" END  
-LAF cd_portrait_copy STR_VAR source = "pc0gar1" destination = EVAL "%tutu_scriptg%arrick" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0eld" destination = EVAL "%tutu_scripte%ldoth" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0fal" destination = EVAL "%tutu_scriptf%aldorn" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0gar" destination = EVAL "%tutu_scriptg%arrick" source_path = "plasmobg1bg2/portraits" END  
 //LAF cd_portrait_copy STR_VAR source = "pc0imo1" destination = EVAL "%tutu_scripti%moen" source_path = "plasmobg1bg2/portraits" END // chosen below 
-LAF cd_portrait_copy STR_VAR source = "pc0jah1" destination = EVAL "%tutu_scriptj%aheira" source_path = "plasmobg1bg2/portraits" END  
-LAF cd_portrait_copy STR_VAR source = "pc0kag1" destination = EVAL "%tutu_scriptk%again" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0kha1" destination = EVAL "%tutu_scriptk%halid" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0kiv1" destination = EVAL "%tutu_scriptk%ivan" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0jah" destination = EVAL "%tutu_scriptj%aheira" source_path = "plasmobg1bg2/portraits" END  
+LAF cd_portrait_copy STR_VAR source = "pc0kag" destination = EVAL "%tutu_scriptk%again" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0kha" destination = EVAL "%tutu_scriptk%halid" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0kiv" destination = EVAL "%tutu_scriptk%ivan" source_path = "plasmobg1bg2/portraits" END
 //LAF cd_portrait_copy STR_VAR source = "pc0min1" destination = EVAL "%tutu_scriptm%insc" source_path = "plasmobg1bg2/portraits" END // no file
-LAF cd_portrait_copy STR_VAR source = "pc0mon1" destination = EVAL "%tutu_scriptm%ontar" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0qua1" destination = EVAL "%tutu_scriptq%uayle" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0saf1" destination = EVAL "%tutu_scripts%afana" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0sha1" destination = EVAL "%tutu_scripts%hartel" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0ski1" destination = EVAL "%tutu_scripts%kie" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0tia1" destination = EVAL "%tutu_scriptt%iax" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0vic1" destination = EVAL "%tutu_scriptv%iconia" source_path = "plasmobg1bg2/portraits" END
-LAF cd_portrait_copy STR_VAR source = "pc0xan1" destination = EVAL "%tutu_scriptx%an" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0mon" destination = EVAL "%tutu_scriptm%ontar" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0qua" destination = EVAL "%tutu_scriptq%uayle" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0saf" destination = EVAL "%tutu_scripts%afana" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0sha" destination = EVAL "%tutu_scripts%hartel" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0ski" destination = EVAL "%tutu_scripts%kie" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0tia" destination = EVAL "%tutu_scriptt%iax" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0vic" destination = EVAL "%tutu_scriptv%iconia" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0xan" destination = EVAL "%tutu_scriptx%an" source_path = "plasmobg1bg2/portraits" END
 //LAF cd_portrait_copy STR_VAR source = "pc0xza1" destination = EVAL "%tutu_scriptx%zar" source_path = "plasmobg1bg2/portraits" END // chosen below
-LAF cd_portrait_copy STR_VAR source = "pc0yes1" destination = EVAL "%tutu_scripty%eslick" source_path = "plasmobg1bg2/portraits" END
+LAF cd_portrait_copy STR_VAR source = "pc0yes" destination = EVAL "%tutu_scripty%eslick" source_path = "plasmobg1bg2/portraits" END
 
 /////                                                  \\\\\
 ///// Imoen                                            \\\\\
