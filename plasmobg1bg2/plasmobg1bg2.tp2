@@ -43,6 +43,7 @@ LANGUAGE ~Russian (Translation by vit mg & aerie.ru)~ ~russian~ ~plasmobg1bg2/tr
 /////                                                  \\\\\
 
 BEGIN @11 DESIGNATED 1000
+LABEL ~cd_plasmocat_bg1bg2_pc~
 
 ACTION_FOR_EACH file IN pc0aja pc0alo pc0bra pc0cor pc0dyn pc0eld pc0fal pc0gar pc0imo1 pc0imo2 pc0jah pc0kag pc0kha 
                         pc0kiv pc0mon pc0qua pc0saf pc0sha pc0ski pc0tia pc0vic pc0xan pc0xza1 pc0xza2 pc0yes  BEGIN
@@ -56,6 +57,7 @@ END
 /////                                                  \\\\\
 
 BEGIN @0  /* Plasmocat's BG1 NPC Portraits in BG2 Style */
+LABEL ~cd_plasmocat_bg1bg2_npc~
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
 LAF cd_portrait_copy STR_VAR source = "pc0aja" destination = EVAL "%tutu_scripta%jantis" source_path = "plasmobg1bg2/portraits" END 
@@ -89,12 +91,14 @@ LAF cd_portrait_copy STR_VAR source = "pc0yes" destination = EVAL "%tutu_scripty
 /////                                                  \\\\\
 
 BEGIN @4
+LABEL ~cd_plasmocat_bg1bg2_imoen1~
 SUBCOMPONENT @5
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
 LAF cd_portrait_copy STR_VAR source = "pc0imo1" destination = EVAL "%tutu_scripti%moen" source_path = "plasmobg1bg2/portraits" END 
 
 BEGIN @6
+LABEL ~cd_plasmocat_bg1bg2_imoen2~
 SUBCOMPONENT @5
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
@@ -105,12 +109,14 @@ LAF cd_portrait_copy STR_VAR source = "pc0imo2" destination = EVAL "%tutu_script
 /////                                                  \\\\\
 
 BEGIN @7
+LABEL ~cd_plasmocat_bg1bg2_xzar1~
 SUBCOMPONENT @8
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
 LAF cd_portrait_copy STR_VAR source = "pc0xza1" destination = EVAL "%tutu_scriptx%zar" source_path = "plasmobg1bg2/portraits" END
 
 BEGIN @9
+LABEL ~cd_plasmocat_bg1bg2_xzar2~
 SUBCOMPONENT @8
 REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee~ @10
 
