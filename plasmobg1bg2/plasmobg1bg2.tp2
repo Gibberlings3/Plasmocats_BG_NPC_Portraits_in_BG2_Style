@@ -8,7 +8,7 @@
 BACKUP ~plasmobg1bg2/backup~
 SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~
 
-VERSION ~v4~
+VERSION ~v5~
 
 ALWAYS
 
@@ -21,7 +21,7 @@ ALWAYS
 
 END
 
-README ~plasmobg1bg2/readme-plasmobg1bg2.html~
+README ~plasmobg1bg2/readme-plasmobg1bg2-%LANGUAGE%.html~ ~plasmobg1bg2/readme-plasmobg1bg2.html~
 
 AUTO_TRA ~plasmobg1bg2/tra/%s~
 
@@ -30,7 +30,7 @@ LANGUAGE ~Deutsch (Translation by Taimon)~            ~german~  ~plasmobg1bg2/tr
                                                                 ~plasmobg1bg2/tra/german/plasmobg1bg2.tra~
 LANGUAGE ~Polski (Translation by brucevayne)~         ~polish~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
                                                                 ~plasmobg1bg2/tra/polish/plasmobg1bg2.tra~
-LANGUAGE ~Francais (Translation by Anomaly)~          ~french~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
+LANGUAGE ~Francais (Traduction : Anomaly)~            ~french~  ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
                                                                 ~plasmobg1bg2/tra/french/plasmobg1bg2.tra~
 LANGUAGE ~Russian (Translation by vit mg & aerie.ru)~ ~russian~ ~plasmobg1bg2/tra/english/plasmobg1bg2.tra~
                                                                 ~plasmobg1bg2/tra/russian/plasmobg1bg2.tra~
@@ -47,7 +47,7 @@ LABEL ~cd_plasmocat_bg1bg2_pc~
 
 ACTION_FOR_EACH file IN pc0aja pc0alo pc0bra pc0cor pc0dyn pc0eld pc0fal pc0gar pc0imo1 pc0imo2 pc0jah pc0kag pc0kha 
                         pc0kiv pc0mon pc0qua pc0saf pc0sha pc0ski pc0tia pc0vic pc0xan pc0xza1 pc0xza2 pc0yes  BEGIN
-						
+
   LAF cd_pc_portrait_copy STR_VAR source = "%file%" source_path = "plasmobg1bg2/portraits" END
 
 END
